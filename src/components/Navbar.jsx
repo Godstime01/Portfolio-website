@@ -48,8 +48,12 @@ const Navbar = () => {
             <a href="#portfolio" className='text-white text-xl hover:text-red transition-colors'>Portfolio</a>
           </div>
           <div className='flex gap-2'>
+            <a href="https://twitter.com/mi6ixx" target='_blank'>
             <AiFillTwitterCircle style={{ fontSize: "2rem" }} />
+            </a>
+            <a href="https://www.github.com/godstime01" target='_blank'>
             <AiFillGithub style={{ fontSize: "2rem" }} />
+            </a>
           </div>
         </div>
       </div>
