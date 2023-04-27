@@ -1,5 +1,7 @@
-import { useState } from 'react';
-import { Navbar, About, Hero, Portfolio, Contact } from "./components"
+import Home from "./components/Home"
+import Navbar from "./components/Navbar"
+import { Routes, Route } from 'react-router-dom';
+import SingleProject from "./components/SingleProject";
 
 function App() {
 
@@ -7,10 +9,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
+      <Routes>
+        <Route path='/' element={<Home />} >
+          <Route path="project/:id" element={<SingleProject />} />
+        </Route>
+
+      </Routes>
+
     </div>
   )
 }

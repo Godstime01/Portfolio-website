@@ -5,6 +5,11 @@
 
 
 @layer base {
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+    }
+
     body {
         font-family: 'Inter', sans-serif;
         /* font-family: 'Krona One', sans-serif; */
